@@ -122,7 +122,9 @@ module.exports = {
                         });
                     }
                 })
-            }));
+            })).then(()=>{
+                return page;
+            });
         },
 
         "page": function (page) { return page; },
